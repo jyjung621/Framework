@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/test.js"],"names":["a","n"],"mappings":"aAAA,GAAMA,GAAI,QAAJA,EAAI,CAACC,CAAD,QAAOA,GAAI,CAAX,EAAV","file":"test.js","sourcesContent":["const a = (n) => n * 3"]}
