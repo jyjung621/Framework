@@ -1,4 +1,8 @@
-## Ignore File ##
+## Ignore File && Directory ##
 
-Study/test/
+## Files ##
 
+## Directory ##
+##Study/node_modules/
+##Study/babeltest/node_modules/
+node_modules/
