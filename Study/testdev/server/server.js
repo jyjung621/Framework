@@ -2,11 +2,14 @@
  *  Define
  ******************************************************************************************/
 const express = require('express');
+const path = require('path');
+
+
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 4000;
 
 // MySql DB
-var db = require('./lib/db');
+//var db = require('./lib/db');
 // compression -> page용량이 클경우 압축해서 관리
 var compression = require('compression');
 var session = require('express-session');
@@ -33,7 +36,7 @@ var helmet = require('helmet');
  ******************************************************************************************/
 app.use(compression());
 app.use(helmet());
-app.use(express.static(__dirname + '/resources'));
+app.use(express.static(path.join(__dirname,'..','public/')));
 app.use(session({
   secret: 'dfbvhas%#@$dvns',
   resave: false,
@@ -71,8 +74,6 @@ app.use('/book', bookRouter);
 app.use('/payment', paymentRouter);
 app.use('/category', categoryRouter);
 app.use('/financy', financyRouter); */
-
-
 
 
  /****************************************************************************************** 
