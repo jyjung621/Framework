@@ -2,20 +2,20 @@
   "development": {
     "username": "rucy",
     "password": "rucy",
-    "database": "RUCY",
-    "host": "127.0.0.1",
-    "dialect": "mysql",
+    "database": "rucy",
+    "host": "maria-rds.cuczcs5osdnu.ap-northeast-2.rds.amazonaws.com",
+    "dialect": "mariadb",
     "operatorsAliases": false
   },
   "test": {
-    "username": "admin",
-    "password": null,
+  "production": {
+    "username": "rucy",
+    "password": "rucy",
     "database": "rucy",
-    "host": "rucybook.cuczcs5osdnu.ap-northeast-2.rds.amazonaws.com",
-    "dialect": "mysql",
+    "host": "maria-rds.cuczcs5osdnu.ap-northeast-2.rds.amazonaws.com",
+    "dialect": "mariadb",
     "operatorsAliases": false
   },
-  "production": {
     "username": "root",
     "password": null,
     "database": "database_production",
