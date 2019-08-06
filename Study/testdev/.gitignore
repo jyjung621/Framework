@@ -6,7 +6,8 @@
 .pnp.js
 
 #database
-#server/database/config/
+/server/database/config/
+
 # testing
 /coverage
 
