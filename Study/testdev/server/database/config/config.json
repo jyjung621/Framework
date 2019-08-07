@@ -1,18 +1,18 @@
 {
   "development": {
-    "username": "rucy",
-    "password": "rucy",
-    "database": "rucy",
-    "host": "maria-rds.cuczcs5osdnu.ap-northeast-2.rds.amazonaws.com",
+    "username": "xxx",
+    "password": "xxx",
+    "database": "xxx",
+    "host": "xxx",
     "dialect": "mariadb",
     "operatorsAliases": false
   },
   "test": {
   "production": {
-    "username": "rucy",
-    "password": "rucy",
-    "database": "rucy",
-    "host": "maria-rds.cuczcs5osdnu.ap-northeast-2.rds.amazonaws.com",
+    "username": "xxx",
+    "password": "xxx",
+    "database": "xxx",
+    "host": "xxx",
     "dialect": "mariadb",
     "operatorsAliases": false
   },
