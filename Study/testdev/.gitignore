@@ -6,7 +6,7 @@
 .pnp.js
 
 #database
-server/database/config/
+/server/database/config/
 
 # testing
 /coverage
@@ -24,3 +24,4 @@ server/database/config/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
