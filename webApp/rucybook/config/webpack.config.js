@@ -290,7 +290,7 @@ module.exports = function(webpackEnv) {
         // Also related to Plug'n'Play, but this time it tells Webpack to load its loaders
         // from the current package.
         PnpWebpackPlugin.moduleLoader(module),
-      ],
+      ],  
     },
     module: {
       strictExportPresence: true,
@@ -473,6 +473,13 @@ module.exports = function(webpackEnv) {
           ],
         },
       ],
+    },
+    devServer: {
+      port:4000,
+      open: true,
+      proxy: {
+        "/": "http://localhost"
+      }
     },
     plugins: [
       // Generates an `index.html` file with the <script> injected.
