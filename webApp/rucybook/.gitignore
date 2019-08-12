@@ -3,6 +3,9 @@
 # dependencies
 node_modules
 
+#database cfg
+/server/database/config
+
 # testing
 /coverage
 
