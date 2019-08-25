@@ -1,11 +1,12 @@
 const express = require('express')
 const os = require('os')
-const  router = express.Router()
+const router = express.Router()
 
 
 router.get('/', function(req,res,next) {
+  console.log('[DEBUG] /api => os.userInfo : ',os.userInfo());
   res.send({
-    user: os.userInfo().username,
+    username: os.userInfo().username,
     test: 'test_A'
   });
 });

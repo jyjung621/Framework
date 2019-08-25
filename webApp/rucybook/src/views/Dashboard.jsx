@@ -60,14 +60,16 @@ class Dashboard extends React.Component {
   componentDidMount() {
     console.log('component start');
     fetch('/api')
-      .then(res => console.log('res',res))
-      .then (res => res.json())
-      .then(user => this.setState({ username: user.username }))
+      .then(res => res.json())
+      .then(user => this.setState({ test:user.test,username:user.username }))
   }
-
+  
 
   render() {
-    const {username} = this.state
+    const username = this.state.username
+    // const test = this.state.test
+
+    console.log('state',this.state)
 
     return (
       <>
